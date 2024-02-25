@@ -20,7 +20,7 @@
                              &kp LGUI  &lt 1 SPACE  &lt 2 BACKSPACE                     &lt 2 ENTER  &lt 1 SPACE  &kp LALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =  <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         lower_layer {
@@ -37,7 +37,7 @@
                                              &trans        &trans        &trans                           &trans        &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =  <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         raise_layer {
@@ -54,9 +54,7 @@
                              &trans   &trans   &trans                            &trans    &trans      &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         layer_3 {
