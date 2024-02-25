@@ -14,10 +14,10 @@
             //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R        &kp T                               &kp Y        &kp U        &kp I      &kp O    &kp P     &kp LEFT_BRACKET
-&kp LCTRL   &kp A  &kp S  &kp D     &kp F        &kp G                               &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C     &kp V        &kp B            &kp C_MUTE  &none  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                          &kp LGUI  &lt 1 SPACE  &lt 2 BACKSPACE                     &lt 2 ENTER  &lt 1 SPACE  &kp LALT
+&kp ESCAPE     &kp Q  &kp W  &kp E     &kp R        &kp T                               &kp Y        &kp U        &kp I      &kp O    &kp P     &kp LEFT_BRACKET
+&mt LCTRL TAB  &kp A  &kp S  &kp D     &kp F        &kp G                               &kp H        &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp V        &kp B            &kp C_MUTE  &none  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                             &kp LGUI  &lt 1 SPACE  &lt 2 BACKSPACE                     &lt 2 ENTER  &lt 1 SPACE  &kp LALT
             >;
 
             sensor-bindings =
@@ -52,11 +52,13 @@
             bindings = <
 &bt BT_CLR  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0                      &kp HOME  &kp END     &kp UP_ARROW  &kp PAGE_DOWN    &kp PG_UP  &kp PRINTSCREEN
 &kp LCTRL   &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1                      &trans    &kp LEFT    &kp DOWN      &kp RIGHT_ARROW  &trans     &trans
-&trans      &kp F9  &kp F10  &kp F11  &kp F12  &trans        &none  &bootloader  &kp K_PP  &kp K_PREV  &kp K_NEXT    &trans           &trans     &kp K_MUTE
+&trans      &kp F9  &kp F10  &kp F11  &kp F12  &trans        &none  &bootloader  &kp C_PP  &kp C_PREV  &kp C_NEXT    &trans           &trans     &kp K_MUTE
                              &trans   &trans   &trans                            &trans    &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_3 {
