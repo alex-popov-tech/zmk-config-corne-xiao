@@ -66,10 +66,120 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
         mm_rpr_star: mm_rpr_star {
             compatible = "zmk,behavior-mod-morph";
             label = "mm_rpr_star";
             bindings = <&kp LS(N0)>, <&kp LS(N8)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_rbkt: mm_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_RBKT";
+            bindings = <&kp LS(N0)>, <&kp LS(N8)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_n3_left: mm_n3_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_N3_LEFT";
+            bindings = <&kp N3>, <&kp LEFT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_n4_right: mm_n4_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_N4_RIGHT";
+            bindings = <&kp N4>, <&kp RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_n7_right: mm_n7_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_N7_RIGHT";
+            bindings = <&kp N7>, <&kp DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_n8_up: mm_n8_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_N8_UP";
+            bindings = <&kp N8>, <&kp UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_n9_lt: mm_n9_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_N9_LT";
+            bindings = <&kp N9>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_n0_gt: mm_n0_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_N0_GT";
+            bindings = <&kp N0>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_t_quot: mm_t_quot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_T_QUOT";
+            bindings = <&kp T>, <&kp SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_s_rbkt: mm_s_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_RBKT";
+            bindings = <&kp S>, <&kp RBKT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_u_grv: mm_u_grv {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_U_GRV";
+            bindings = <&kp U>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_comma_bslh: mm_comma_bslh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_COMMA_BSLH";
+            bindings = <&kp COMMA>, <&kp BSLH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_shtfslash_bslash: mm_shtfslash_bslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_SHTFSLASH_BSLASH";
+            bindings = <&kp LS(SLASH)>, <&kp BSLH>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -157,7 +267,7 @@
 &kp F13  &kp Q  &kp C  &kp D    &kp M    &kp V                           &kp B      &kp W       &kp U        &kp K  &kp SQT         &kp F13
 &kp F11  &kp N  &kp S  &kp T    &kp R    &kp L                           &kp Y      &kp A       &kp E        &kp O  &kp I           &kp F12
 &kp F14  &kp X  &kp F  &kp G    &kp H    &kp Z    &kp C_MUTE  &kp PSCRN  &kp SLASH  &kp P       &mm_dot_col  &kp J  &mm_comma_semi  &kp F14
-                &kp ESC  &kp SPC  &mo SYM                         &kp BSPC   &kp LSHIFT  &kp RET
+                       &kp ESC  &kp SPC  &mo SYM                         &kp BSPC   &kp LSHIFT  &kp RET
             >;
 
             sensor-bindings =
