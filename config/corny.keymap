@@ -6,6 +6,69 @@
     behaviors {
         #include "modmorph.dtsi"
       #include "modtap.dtsi"
+
+        mm_comma_semi: mm_comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_COMMA_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_dot_col: mm_dot_col {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_DOT_COL";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_pipe_bslh: mm_pipe_bslh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_PIPE_BSLH";
+            bindings = <&kp PIPE>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_lbkt_lbrace: mm_lbkt_lbrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LBKT_LBRACE";
+            bindings = <&kp LBKT>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_lpr_hash: mm_lpr_hash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LPR_HASH";
+            bindings = <&kp LS(N9)>, <&kp LS(N3)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_lcbr_dollar: mm_lcbr_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LCBR_DOLLAR";
+            bindings = <&kp LS(LBKT)>, <&kp LS(N4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mm_rcbr_amp: mm_rcbr_amp {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_RCBR_AMP";
+            bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -24,6 +87,24 @@
         bindings = <&kp F14 &to VUKEYS>;
 
         )
+
+        m_f14_ua: m_f14_ua {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F14 &to 1>;
+            label = "M_F14_UA";
+            wait-ms = <30>;
+            tap-ms = <40>;
+        };
+
+        m_f14_vukeys: m_f14_vukeys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F14 &to 0>;
+            label = "M_F14_VUKEYS";
+            wait-ms = <30>;
+            tap-ms = <40>;
+        };
     };
 
     combos {
