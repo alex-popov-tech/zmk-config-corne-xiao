@@ -7,9 +7,6 @@
       #include "modmorph.dtsi"
       #include "modtap.dtsi"
     };
-    combos {
-      #include "combos.dtsi"
-    };
     macros {
       #include "macros.dtsi"
     };
