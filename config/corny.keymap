@@ -250,15 +250,15 @@
             timeout-ms = <50>;
         };
 
-        combo_thumbs_vukeys {
-            bindings = <&m_f14_vukeys>;
-            key-positions = <41 40>;
-            layers = <1>;
+        vukeys_to_ua {
+            bindings = <&m_f14_ua>;
+            key-positions = <40 41>;
+            layers = <0>;
         };
 
-        combo_thumbs_ua {
-            bindings = <&m_f14_ua>;
-            key-positions = <41 40>;
+        ua_to_vukeys {
+            bindings = <&m_f14_vukeys>;
+            key-positions = <40 41>;
             layers = <1>;
         };
     };
