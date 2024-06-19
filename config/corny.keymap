@@ -4,9 +4,6 @@
 
 / {
     behaviors {
-        #include "modmorph.dtsi"
-      #include "modtap.dtsi"
-
         mm_comma_semi: mm_comma_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_COMMA_SEMI";
@@ -69,25 +66,28 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+        mm_rpr_star: mm_rpr_star {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mm_rpr_star";
+            bindings = <&kp LS(N0)>, <&kp LS(N8)>;
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        mm_rbkt: mm_rbkt { compatible = "zmk,behavior-mod-morph"; label = "mm_rbkt"; bindings = <&kp RBKT>, <&kp RBKT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_n3_left: mm_n3_left { compatible = "zmk,behavior-mod-morph"; label = "mm_n3_left"; bindings = <&kp N3>, <&kp LEFT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_n4_right: mm_n4_right { compatible = "zmk,behavior-mod-morph"; label = "mm_n4_right"; bindings = <&kp N4>, <&kp RIGHT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_n7_down: mm_n7_down { compatible = "zmk,behavior-mod-morph"; label = "mm_n7_down"; bindings = <&kp N7>, <&kp DOWN>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_n8_up: mm_n8_up { compatible = "zmk,behavior-mod-morph"; label = "mm_n8_up"; bindings = <&kp N8>, <&kp UP>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_n9_lt: mm_n9_lt { compatible = "zmk,behavior-mod-morph"; label = "mm_n9_lt"; bindings = <&kp N9>, <&kp LESS_THAN>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_n0_gt: mm_n0_gt { compatible = "zmk,behavior-mod-morph"; label = "mm_n0_gt"; bindings = <&kp N0>, <&kp GREATER_THAN>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_t_quot: mm_t_quot { compatible = "zmk,behavior-mod-morph"; label = "mm_t_quot"; bindings = <&kp T>, <&kp SINGLE_QUOTE>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_s_rbkt: mm_s_rbkt { compatible = "zmk,behavior-mod-morph"; label = "mm_s_rbkt"; bindings = <&kp S>, <&kp RBKT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_u_grv: mm_u_grv { compatible = "zmk,behavior-mod-morph"; label = "mm_u_grv"; bindings = <&kp U>, <&kp GRAVE>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_comma_bslh: mm_comma_bslh { compatible = "zmk,behavior-mod-morph"; label = "mm_comma_bslh"; bindings = <&kp COMMA>, <&kp BSLH>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
+        mm_shtfslash_bslash: mm_shtfslash_bslash { compatible = "zmk,behavior-mod-morph"; label = "mm_shtfslash_bslash"; bindings = <&kp LS(SLASH)>, <&kp BSLH>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
     };
 
     macros {
-        ZMK_MACRO(m_f14_ua,
-
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp F14 &to UA>;
-
-        )
-      ZMK_MACRO(
-
-        m_f14_vukeys,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp F14 &to VUKEYS>;
-
-        )
-
         m_f14_ua: m_f14_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
