@@ -73,18 +73,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        mm_rbkt: mm_rbkt { compatible = "zmk,behavior-mod-morph"; label = "mm_rbkt"; bindings = <&kp RBKT>, <&kp RBKT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_n3_left: mm_n3_left { compatible = "zmk,behavior-mod-morph"; label = "mm_n3_left"; bindings = <&kp N3>, <&kp LEFT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_n4_right: mm_n4_right { compatible = "zmk,behavior-mod-morph"; label = "mm_n4_right"; bindings = <&kp N4>, <&kp RIGHT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_n7_down: mm_n7_down { compatible = "zmk,behavior-mod-morph"; label = "mm_n7_down"; bindings = <&kp N7>, <&kp DOWN>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_n8_up: mm_n8_up { compatible = "zmk,behavior-mod-morph"; label = "mm_n8_up"; bindings = <&kp N8>, <&kp UP>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_n9_lt: mm_n9_lt { compatible = "zmk,behavior-mod-morph"; label = "mm_n9_lt"; bindings = <&kp N9>, <&kp LESS_THAN>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_n0_gt: mm_n0_gt { compatible = "zmk,behavior-mod-morph"; label = "mm_n0_gt"; bindings = <&kp N0>, <&kp GREATER_THAN>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_t_quot: mm_t_quot { compatible = "zmk,behavior-mod-morph"; label = "mm_t_quot"; bindings = <&kp T>, <&kp SINGLE_QUOTE>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_s_rbkt: mm_s_rbkt { compatible = "zmk,behavior-mod-morph"; label = "mm_s_rbkt"; bindings = <&kp S>, <&kp RBKT>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_u_grv: mm_u_grv { compatible = "zmk,behavior-mod-morph"; label = "mm_u_grv"; bindings = <&kp U>, <&kp GRAVE>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_comma_bslh: mm_comma_bslh { compatible = "zmk,behavior-mod-morph"; label = "mm_comma_bslh"; bindings = <&kp COMMA>, <&kp BSLH>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
-        mm_shtfslash_bslash: mm_shtfslash_bslash { compatible = "zmk,behavior-mod-morph"; label = "mm_shtfslash_bslash"; bindings = <&kp LS(SLASH)>, <&kp BSLH>; #binding-cells = <0>; mods = <(MOD_LSFT)>; };
     };
 
     macros {
@@ -169,7 +157,7 @@
 &kp F13  &kp Q  &kp C  &kp D    &kp M    &kp V                           &kp B      &kp W       &kp U        &kp K  &kp SQT         &kp F13
 &kp F11  &kp N  &kp S  &kp T    &kp R    &kp L                           &kp Y      &kp A       &kp E        &kp O  &kp I           &kp F12
 &kp F14  &kp X  &kp F  &kp G    &kp H    &kp Z    &kp C_MUTE  &kp PSCRN  &kp SLASH  &kp P       &mm_dot_col  &kp J  &mm_comma_semi  &kp F14
-                       &kp ESC  &kp SPC  &mo SYM                         &kp BSPC   &kp LSHIFT  &kp RET
+                &kp ESC  &kp SPC  &mo SYM                         &kp BSPC   &kp LSHIFT  &kp RET
             >;
 
             sensor-bindings =
